@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+}
+
+.main-box{
+       height:100vh;
+       background:url("camera.jpg");
+       background-size:cover;
+}
+
+#check{
+    display:none;
+}
+
+.btn-one{
+    color:white;
+    position:absolute;
+    font-size:20px;
+    font-weight:700;
+    line-height:50px;
+}
+
+
+
+.slidebar{
+    position:fixed;
+    left:-300px;
+    height:100vh;
+    width:250px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow:0 0 6px rgba(255, 255, 255, 0.5);
+    transition:all 0.3s linear;
+}
+
+.slidebar .logo{
+    position:absolute;
+    height:50px;
+    width:100%;
+    line-height: 50px;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+.slidebar .logo a{
+    position:absolute;
+    text-decoration:none;
+    left:50px;
+    color:white;
+    font-size:20px;
+}
+.slidebar .btn-two i{
+    color:white;
+    position:absolute;
+    left:220px;
+    font-size:20px;
+    line-height:50px;
+    cursor:pointer;
+    opacity:0.4;
+}
+
+.slidebar .menu{
+  position:absolute;
+  width:100%;
+  top:80px;
+}
+
+.slidebar .menu li{
+    font-size:20px;
+    margin-top:2px;
+    padding:7px 20px;
+
+}
+
+.slidebar .menu i,a{
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.slidebar .menu i {
+    padding-right:8px;
+}
+
+.slidebar .socialmedia{
+    position:absolute;
+    left:60px;
+    bottom:30px;
+
+}
+
+.slidebar .socialmedia i{
+    padding:0px 5px;
+    color:white;
+    opacity: 0.5;
+}
+
+.slidebar .menu li:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.btn-one i:hover{
+    font-size:23px;
+    transition:all 0.3s linear;
+
+}
+.btn-two i:hover{
+    font-size:23px;
+}
+
+.slidebar .socialmedia i:hover {
+    opacity:1;
+    transform:scale(1.1)
+}
+
+#check:checked ~ .slidebar {
+    left:0;
+}
+
+#check:checked ~ .btn-one{
+    opacity:0;
+}
